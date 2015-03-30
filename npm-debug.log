@@ -1,0 +1,503 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 warn package.json tutorialzine-remote-controller@1.0.0 No repository field.
+6 warn package.json tutorialzine-remote-controller@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/home/aps/node_js_projects/smart_slide',
+8 verbose install   [ 'express', 'socket.io' ] ]
+9 info preinstall tutorialzine-remote-controller@1.0.0
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'express@^4.11.0', null ]
+12 verbose cache add name=undefined spec="express@^4.11.0" args=["express@^4.11.0",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'express@^4.11.0',
+13 verbose parsed url   path: 'express@^4.11.0',
+13 verbose parsed url   href: 'express@^4.11.0' }
+14 verbose cache add [ 'socket.io@^1.3.2', null ]
+15 verbose cache add name=undefined spec="socket.io@^1.3.2" args=["socket.io@^1.3.2",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'socket.io@^1.3.2',
+16 verbose parsed url   path: 'socket.io@^1.3.2',
+16 verbose parsed url   href: 'socket.io@^1.3.2' }
+17 verbose cache add name="express" spec="^4.11.0" args=["express","^4.11.0"]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: '^4.11.0',
+18 verbose parsed url   path: '^4.11.0',
+18 verbose parsed url   href: '^4.11.0' }
+19 verbose addNamed [ 'express', '^4.11.0' ]
+20 verbose addNamed [ null, '>=4.11.0-0 <5.0.0-0' ]
+21 verbose cache add name="socket.io" spec="^1.3.2" args=["socket.io","^1.3.2"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '^1.3.2',
+22 verbose parsed url   path: '^1.3.2',
+22 verbose parsed url   href: '^1.3.2' }
+23 verbose addNamed [ 'socket.io', '^1.3.2' ]
+24 verbose addNamed [ null, '>=1.3.2-0 <2.0.0-0' ]
+25 silly lockFile 33d17ca5-express-4-11-0 express@^4.11.0
+26 verbose lock express@^4.11.0 /home/aps/.npm/33d17ca5-express-4-11-0.lock
+27 silly lockFile f3be1dbd-socket-io-1-3-2 socket.io@^1.3.2
+28 verbose lock socket.io@^1.3.2 /home/aps/.npm/f3be1dbd-socket-io-1-3-2.lock
+29 silly addNameRange { name: 'express', range: '>=4.11.0-0 <5.0.0-0', hasData: false }
+30 silly addNameRange { name: 'socket.io',
+30 silly addNameRange   range: '>=1.3.2-0 <2.0.0-0',
+30 silly addNameRange   hasData: false }
+31 verbose request where is /express
+32 verbose request registry https://registry.npmjs.org/
+33 verbose request id 4263ee9690500397
+34 verbose url raw /express
+35 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+36 verbose url resolved https://registry.npmjs.org/express
+37 verbose request where is https://registry.npmjs.org/express
+38 info trying registry request attempt 1 at 01:13:58
+39 http GET https://registry.npmjs.org/express
+40 verbose request where is /socket.io
+41 verbose request registry https://registry.npmjs.org/
+42 verbose url raw /socket.io
+43 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+44 verbose url resolved https://registry.npmjs.org/socket.io
+45 verbose request where is https://registry.npmjs.org/socket.io
+46 info trying registry request attempt 1 at 01:13:58
+47 verbose etag "4Q2NZYLBBNCB32U4GJTGULRH3"
+48 http GET https://registry.npmjs.org/socket.io
+49 http 200 https://registry.npmjs.org/socket.io
+50 silly registry.get cb [ 200,
+50 silly registry.get   { date: 'Sun, 29 Mar 2015 19:44:04 GMT',
+50 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+50 silly registry.get     etag: '"5FH1JMAGO7MTLYKF70N1WNXGW"',
+50 silly registry.get     'content-type': 'application/json',
+50 silly registry.get     'cache-control': 'max-age=60',
+50 silly registry.get     'content-length': '110920',
+50 silly registry.get     'accept-ranges': 'bytes',
+50 silly registry.get     via: '1.1 varnish',
+50 silly registry.get     age: '0',
+50 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+50 silly registry.get     'x-cache': 'HIT',
+50 silly registry.get     'x-cache-hits': '1',
+50 silly registry.get     'x-timer': 'S1427658244.040095,VS0,VE825',
+50 silly registry.get     vary: 'Accept',
+50 silly registry.get     'keep-alive': 'timeout=10, max=50',
+50 silly registry.get     connection: 'Keep-Alive' } ]
+51 silly addNameRange number 2 { name: 'socket.io', range: '>=1.3.2-0 <2.0.0-0', hasData: true }
+52 silly addNameRange versions [ 'socket.io',
+52 silly addNameRange   [ '0.3.8',
+52 silly addNameRange     '0.4.0',
+52 silly addNameRange     '0.4.1',
+52 silly addNameRange     '0.5.1',
+52 silly addNameRange     '0.5.3',
+52 silly addNameRange     '0.6.0',
+52 silly addNameRange     '0.6.1',
+52 silly addNameRange     '0.6.3',
+52 silly addNameRange     '0.6.4',
+52 silly addNameRange     '0.6.5',
+52 silly addNameRange     '0.6.6',
+52 silly addNameRange     '0.6.7',
+52 silly addNameRange     '0.6.8',
+52 silly addNameRange     '0.6.9',
+52 silly addNameRange     '0.6.10',
+52 silly addNameRange     '0.6.11',
+52 silly addNameRange     '0.6.12',
+52 silly addNameRange     '0.6.14',
+52 silly addNameRange     '0.6.15',
+52 silly addNameRange     '0.6.16',
+52 silly addNameRange     '0.6.17',
+52 silly addNameRange     '0.6.18',
+52 silly addNameRange     '0.7.0',
+52 silly addNameRange     '0.7.1',
+52 silly addNameRange     '0.7.2',
+52 silly addNameRange     '0.7.3',
+52 silly addNameRange     '0.7.4',
+52 silly addNameRange     '0.7.5',
+52 silly addNameRange     '0.7.6',
+52 silly addNameRange     '0.7.7',
+52 silly addNameRange     '0.7.8',
+52 silly addNameRange     '0.7.9',
+52 silly addNameRange     '0.7.10',
+52 silly addNameRange     '0.7.11',
+52 silly addNameRange     '0.8.0',
+52 silly addNameRange     '0.8.1',
+52 silly addNameRange     '0.8.2',
+52 silly addNameRange     '0.8.3',
+52 silly addNameRange     '0.8.4',
+52 silly addNameRange     '0.8.5',
+52 silly addNameRange     '0.8.6',
+52 silly addNameRange     '0.8.7',
+52 silly addNameRange     '0.9.0',
+52 silly addNameRange     '0.9.1',
+52 silly addNameRange     '0.9.1-1',
+52 silly addNameRange     '0.9.2',
+52 silly addNameRange     '0.9.3',
+52 silly addNameRange     '0.9.4',
+52 silly addNameRange     '0.9.5',
+52 silly addNameRange     '0.9.6',
+52 silly addNameRange     '0.9.7',
+52 silly addNameRange     '0.9.8',
+52 silly addNameRange     '0.9.9',
+52 silly addNameRange     '0.9.10',
+52 silly addNameRange     '0.9.11',
+52 silly addNameRange     '0.9.12',
+52 silly addNameRange     '0.9.13',
+52 silly addNameRange     '0.9.14',
+52 silly addNameRange     '0.9.15',
+52 silly addNameRange     '0.9.16',
+52 silly addNameRange     '1.0.0-pre',
+52 silly addNameRange     '1.0.0-pre2',
+52 silly addNameRange     '1.0.0-pre3',
+52 silly addNameRange     '1.0.0-pre4',
+52 silly addNameRange     '1.0.0-pre5',
+52 silly addNameRange     '0.9.17',
+52 silly addNameRange     '1.0.0',
+52 silly addNameRange     '1.0.1',
+52 silly addNameRange     '1.0.2',
+52 silly addNameRange     '1.0.3',
+52 silly addNameRange     '1.0.4',
+52 silly addNameRange     '1.0.5',
+52 silly addNameRange     '1.0.6',
+52 silly addNameRange     '1.1.0',
+52 silly addNameRange     '1.2.0',
+52 silly addNameRange     '1.2.1',
+52 silly addNameRange     '1.3.0',
+52 silly addNameRange     '1.3.1',
+52 silly addNameRange     '1.3.2',
+52 silly addNameRange     '1.3.3',
+52 silly addNameRange     '1.3.4',
+52 silly addNameRange     '1.3.5' ] ]
+53 verbose addNamed [ 'socket.io', '1.3.5' ]
+54 verbose addNamed [ '1.3.5', '1.3.5' ]
+55 silly lockFile e27f34ff-socket-io-1-3-5 socket.io@1.3.5
+56 verbose lock socket.io@1.3.5 /home/aps/.npm/e27f34ff-socket-io-1-3-5.lock
+57 silly lockFile e6e9d1a3-rg-socket-io-socket-io-1-3-5-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.3.5.tgz
+58 verbose lock https://registry.npmjs.org/socket.io/-/socket.io-1.3.5.tgz /home/aps/.npm/e6e9d1a3-rg-socket-io-socket-io-1-3-5-tgz.lock
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io/-/socket.io-1.3.5.tgz',
+59 verbose addRemoteTarball   'bfd609f37626889e94df9d3526db79a84255f1d8' ]
+60 info retry fetch attempt 1 at 01:14:15
+61 verbose fetch to= /tmp/npm-5324-5AMcZYSs/registry.npmjs.org/socket.io/-/socket.io-1.3.5.tgz
+62 http GET https://registry.npmjs.org/socket.io/-/socket.io-1.3.5.tgz
+63 http 200 https://registry.npmjs.org/express
+64 silly registry.get cb [ 200,
+64 silly registry.get   { date: 'Sun, 29 Mar 2015 19:44:05 GMT',
+64 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+64 silly registry.get     etag: '"69KHCAX70KWB0J0QCSH06T3ZO"',
+64 silly registry.get     'content-type': 'application/json',
+64 silly registry.get     'cache-control': 'max-age=60',
+64 silly registry.get     'content-length': '491851',
+64 silly registry.get     'accept-ranges': 'bytes',
+64 silly registry.get     via: '1.1 varnish',
+64 silly registry.get     age: '0',
+64 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+64 silly registry.get     'x-cache': 'HIT',
+64 silly registry.get     'x-cache-hits': '1',
+64 silly registry.get     'x-timer': 'S1427658244.072264,VS0,VE984',
+64 silly registry.get     vary: 'Accept',
+64 silly registry.get     'keep-alive': 'timeout=10, max=50',
+64 silly registry.get     connection: 'Keep-Alive' } ]
+65 silly addNameRange number 2 { name: 'express', range: '>=4.11.0-0 <5.0.0-0', hasData: true }
+66 silly addNameRange versions [ 'express',
+66 silly addNameRange   [ '0.14.0',
+66 silly addNameRange     '0.14.1',
+66 silly addNameRange     '1.0.0',
+66 silly addNameRange     '1.0.1',
+66 silly addNameRange     '1.0.2',
+66 silly addNameRange     '1.0.3',
+66 silly addNameRange     '1.0.4',
+66 silly addNameRange     '1.0.5',
+66 silly addNameRange     '1.0.6',
+66 silly addNameRange     '1.0.7',
+66 silly addNameRange     '1.0.8',
+66 silly addNameRange     '2.0.0',
+66 silly addNameRange     '2.1.0',
+66 silly addNameRange     '2.1.1',
+66 silly addNameRange     '2.2.0',
+66 silly addNameRange     '2.2.1',
+66 silly addNameRange     '2.2.2',
+66 silly addNameRange     '2.3.0',
+66 silly addNameRange     '2.3.1',
+66 silly addNameRange     '2.3.2',
+66 silly addNameRange     '2.3.3',
+66 silly addNameRange     '2.3.4',
+66 silly addNameRange     '2.3.5',
+66 silly addNameRange     '2.3.6',
+66 silly addNameRange     '2.3.7',
+66 silly addNameRange     '2.3.8',
+66 silly addNameRange     '2.3.9',
+66 silly addNameRange     '2.3.10',
+66 silly addNameRange     '2.3.11',
+66 silly addNameRange     '2.3.12',
+66 silly addNameRange     '2.4.0',
+66 silly addNameRange     '2.4.1',
+66 silly addNameRange     '2.4.2',
+66 silly addNameRange     '2.4.3',
+66 silly addNameRange     '2.4.4',
+66 silly addNameRange     '2.4.5',
+66 silly addNameRange     '2.4.6',
+66 silly addNameRange     '2.4.7',
+66 silly addNameRange     '2.5.0',
+66 silly addNameRange     '2.5.1',
+66 silly addNameRange     '2.5.2',
+66 silly addNameRange     '2.5.3',
+66 silly addNameRange     '2.5.4',
+66 silly addNameRange     '2.5.5',
+66 silly addNameRange     '2.5.6',
+66 silly addNameRange     '2.5.7',
+66 silly addNameRange     '2.5.8',
+66 silly addNameRange     '2.5.9',
+66 silly addNameRange     '2.5.10',
+66 silly addNameRange     '2.5.11',
+66 silly addNameRange     '3.0.0',
+66 silly addNameRange     '3.0.1',
+66 silly addNameRange     '3.0.2',
+66 silly addNameRange     '3.0.3',
+66 silly addNameRange     '3.0.4',
+66 silly addNameRange     '3.0.5',
+66 silly addNameRange     '3.0.6',
+66 silly addNameRange     '3.1.0',
+66 silly addNameRange     '3.1.1',
+66 silly addNameRange     '3.1.2',
+66 silly addNameRange     '3.2.0',
+66 silly addNameRange     '3.2.1',
+66 silly addNameRange     '3.2.2',
+66 silly addNameRange     '3.2.3',
+66 silly addNameRange     '3.2.4',
+66 silly addNameRange     '3.2.5',
+66 silly addNameRange     '3.2.6',
+66 silly addNameRange     '3.3.0',
+66 silly addNameRange     '3.3.1',
+66 silly addNameRange     '3.3.2',
+66 silly addNameRange     '3.3.3',
+66 silly addNameRange     '3.3.4',
+66 silly addNameRange     '3.3.5',
+66 silly addNameRange     '3.3.6',
+66 silly addNameRange     '1.0.0-beta',
+66 silly addNameRange     '1.0.0-beta2',
+66 silly addNameRange     '1.0.0-rc',
+66 silly addNameRange     '1.0.0-rc2',
+66 silly addNameRange     '1.0.0-rc3',
+66 silly addNameRange     '1.0.0-rc4',
+66 silly addNameRange     '2.0.0-beta',
+66 silly addNameRange     '2.0.0-beta2',
+66 silly addNameRange     '2.0.0-beta3',
+66 silly addNameRange     '2.0.0-rc',
+66 silly addNameRange     '2.0.0-rc2',
+66 silly addNameRange     '2.0.0-rc3',
+66 silly addNameRange     '3.0.0-alpha1',
+66 silly addNameRange     '3.0.0-alpha2',
+66 silly addNameRange     '3.0.0-alpha3',
+66 silly addNameRange     '3.0.0-alpha4',
+66 silly addNameRange     '3.0.0-alpha5',
+66 silly addNameRange     '3.0.0-beta1',
+66 silly addNameRange     '3.0.0-beta2',
+66 silly addNameRange     '3.0.0-beta3',
+66 silly addNameRange     '3.0.0-beta4',
+66 silly addNameRange     '3.0.0-beta6',
+66 silly addNameRange     '3.0.0-beta7',
+66 silly addNameRange     '3.0.0-rc1',
+66 silly addNameRange     '3.0.0-rc2',
+66 silly addNameRange     '3.0.0-rc3',
+66 silly addNameRange     '3.0.0-rc4',
+66 silly addNameRange     '3.0.0-rc5',
+66 silly addNameRange     '3.3.7',
+66 silly addNameRange     '3.3.8',
+66 silly addNameRange     '3.4.0',
+66 silly addNameRange     '3.4.1',
+66 silly addNameRange     '3.4.2',
+66 silly addNameRange     '3.4.3',
+66 silly addNameRange     '3.4.4',
+66 silly addNameRange     '3.4.5',
+66 silly addNameRange     '3.4.6',
+66 silly addNameRange     '3.4.7',
+66 silly addNameRange     '3.4.8',
+66 silly addNameRange     '4.0.0-rc1',
+66 silly addNameRange     '4.0.0-rc2',
+66 silly addNameRange     '3.5.0',
+66 silly addNameRange     '4.0.0-rc3',
+66 silly addNameRange     '4.0.0-rc4',
+66 silly addNameRange     '3.5.1',
+66 silly addNameRange     '4.0.0',
+66 silly addNameRange     '3.5.2',
+66 silly addNameRange     '4.1.0',
+66 silly addNameRange     '4.1.1',
+66 silly addNameRange     '3.5.3',
+66 silly addNameRange     '4.1.2',
+66 silly addNameRange     '3.6.0',
+66 silly addNameRange     '4.2.0',
+66 silly addNameRange     '3.7.0',
+66 silly addNameRange     '3.8.0',
+66 silly addNameRange     '4.3.0',
+66 silly addNameRange     '4.3.1',
+66 silly addNameRange     '3.8.1',
+66 silly addNameRange     '4.3.2',
+66 silly addNameRange     '3.9.0',
+66 silly addNameRange     '4.4.0',
+66 silly addNameRange     '4.4.1',
+66 silly addNameRange     '3.10.0',
+66 silly addNameRange     '3.10.1',
+66 silly addNameRange     '3.10.2',
+66 silly addNameRange     '3.10.3',
+66 silly addNameRange     '3.10.4',
+66 silly addNameRange     '4.4.2',
+66 silly addNameRange     '3.10.5',
+66 silly addNameRange     '4.4.3',
+66 silly addNameRange     '3.11.0',
+66 silly addNameRange     '4.4.4',
+66 silly addNameRange     '3.12.0',
+66 silly addNameRange     '3.12.1',
+66 silly addNameRange     '4.4.5',
+66 silly addNameRange     '3.13.0',
+66 silly addNameRange     '4.5.0',
+66 silly addNameRange     '4.5.1',
+66 silly addNameRange     '3.14.0',
+66 silly addNameRange     '4.6.0',
+66 silly addNameRange     '4.6.1',
+66 silly addNameRange     '3.15.0',
+66 silly addNameRange     '4.7.0',
+66 silly addNameRange     '3.15.1',
+66 silly addNameRange     '4.7.1',
+66 silly addNameRange     '3.15.2',
+66 silly addNameRange     '4.7.2',
+66 silly addNameRange     '4.7.3',
+66 silly addNameRange     '3.15.3',
+66 silly addNameRange     '4.7.4',
+66 silly addNameRange     '3.16.0',
+66 silly addNameRange     '4.8.0',
+66 silly addNameRange     '3.16.1',
+66 silly addNameRange     '4.8.1',
+66 silly addNameRange     '3.16.2',
+66 silly addNameRange     '4.8.2',
+66 silly addNameRange     '3.16.3',
+66 silly addNameRange     '3.16.4',
+66 silly addNameRange     '4.8.3',
+66 silly addNameRange     '3.16.5',
+66 silly addNameRange     '3.16.6',
+66 silly addNameRange     '4.8.4',
+66 silly addNameRange     '3.16.7',
+66 silly addNameRange     '4.8.5',
+66 silly addNameRange     '3.16.8',
+66 silly addNameRange     '4.8.6',
+66 silly addNameRange     '3.16.9',
+66 silly addNameRange     '4.8.7',
+66 silly addNameRange     '3.16.10',
+66 silly addNameRange     '4.8.8',
+66 silly addNameRange     '3.17.0',
+66 silly addNameRange     '3.17.1',
+66 silly addNameRange     '4.9.0',
+66 silly addNameRange     '3.17.2',
+66 silly addNameRange     '4.9.1',
+66 silly addNameRange     '4.9.2',
+66 silly addNameRange     '3.17.3',
+66 silly addNameRange     '4.9.3',
+66 silly addNameRange     '3.17.4',
+66 silly addNameRange     '4.9.4',
+66 silly addNameRange     '3.17.5',
+66 silly addNameRange     '4.9.5',
+66 silly addNameRange     '3.17.6',
+66 silly addNameRange     '3.17.7',
+66 silly addNameRange     '4.9.6',
+66 silly addNameRange     '4.9.7',
+66 silly addNameRange     '3.17.8',
+66 silly addNameRange     '4.9.8',
+66 silly addNameRange     '3.18.0',
+66 silly addNameRange     '3.18.1',
+66 silly addNameRange     '4.10.0',
+66 silly addNameRange     '3.18.2',
+66 silly addNameRange     '4.10.1',
+66 silly addNameRange     '5.0.0-alpha.1',
+66 silly addNameRange     '3.18.3',
+66 silly addNameRange     '4.10.2',
+66 silly addNameRange     '3.18.4',
+66 silly addNameRange     '4.10.3',
+66 silly addNameRange     '4.10.4',
+66 silly addNameRange     '4.10.5',
+66 silly addNameRange     '3.18.5',
+66 silly addNameRange     '3.18.6',
+66 silly addNameRange     '4.10.6',
+66 silly addNameRange     '4.10.7',
+66 silly addNameRange     '3.19.0',
+66 silly addNameRange     '4.10.8',
+66 silly addNameRange     '4.11.0',
+66 silly addNameRange     '3.19.1',
+66 silly addNameRange     '4.11.1',
+66 silly addNameRange     '3.19.2',
+66 silly addNameRange     '4.11.2',
+66 silly addNameRange     '3.20.0',
+66 silly addNameRange     '4.12.0',
+66 silly addNameRange     '3.20.1',
+66 silly addNameRange     '4.12.1',
+66 silly addNameRange     '4.12.2',
+66 silly addNameRange     '3.20.2',
+66 silly addNameRange     '4.12.3' ] ]
+67 verbose addNamed [ 'express', '4.12.3' ]
+68 verbose addNamed [ '4.12.3', '4.12.3' ]
+69 silly lockFile 0b3fc563-express-4-12-3 express@4.12.3
+70 verbose lock express@4.12.3 /home/aps/.npm/0b3fc563-express-4-12-3.lock
+71 silly lockFile c3db49de-s-org-express-express-4-12-3-tgz https://registry.npmjs.org/express/-/express-4.12.3.tgz
+72 verbose lock https://registry.npmjs.org/express/-/express-4.12.3.tgz /home/aps/.npm/c3db49de-s-org-express-express-4-12-3-tgz.lock
+73 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.12.3.tgz',
+73 verbose addRemoteTarball   '6b9d94aec5ae03270d86d390c277a8c5a5ad0ee2' ]
+74 info retry fetch attempt 1 at 01:14:26
+75 verbose fetch to= /tmp/npm-5324-5AMcZYSs/registry.npmjs.org/express/-/express-4.12.3.tgz
+76 http GET https://registry.npmjs.org/express/-/express-4.12.3.tgz
+77 http 200 https://registry.npmjs.org/socket.io/-/socket.io-1.3.5.tgz
+78 silly lockFile e6e9d1a3-rg-socket-io-socket-io-1-3-5-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.3.5.tgz
+79 silly lockFile e6e9d1a3-rg-socket-io-socket-io-1-3-5-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.3.5.tgz
+80 silly lockFile e27f34ff-socket-io-1-3-5 socket.io@1.3.5
+81 silly lockFile e27f34ff-socket-io-1-3-5 socket.io@1.3.5
+82 silly lockFile f3be1dbd-socket-io-1-3-2 socket.io@^1.3.2
+83 silly lockFile f3be1dbd-socket-io-1-3-2 socket.io@^1.3.2
+84 http 200 https://registry.npmjs.org/express/-/express-4.12.3.tgz
+85 silly lockFile c3db49de-s-org-express-express-4-12-3-tgz https://registry.npmjs.org/express/-/express-4.12.3.tgz
+86 silly lockFile c3db49de-s-org-express-express-4-12-3-tgz https://registry.npmjs.org/express/-/express-4.12.3.tgz
+87 silly lockFile 0b3fc563-express-4-12-3 express@4.12.3
+88 silly lockFile 0b3fc563-express-4-12-3 express@4.12.3
+89 silly lockFile 33d17ca5-express-4-11-0 express@^4.11.0
+90 silly lockFile 33d17ca5-express-4-11-0 express@^4.11.0
+91 error Error: EACCES, mkdir '/home/aps/.npm/socket.io/1.3.5'
+91 error  { [Error: EACCES, mkdir '/home/aps/.npm/socket.io/1.3.5']
+91 error   errno: 3,
+91 error   code: 'EACCES',
+91 error   path: '/home/aps/.npm/socket.io/1.3.5',
+91 error   parent: 'tutorialzine-remote-controller' }
+92 error Please try running this command again as root/Administrator.
+93 error System Linux 3.13.0-46-generic
+94 error command "/usr/bin/node" "/usr/bin/npm" "install"
+95 error cwd /home/aps/node_js_projects/smart_slide
+96 error node -v v0.10.37
+97 error npm -v 1.4.28
+98 error path /home/aps/.npm/socket.io/1.3.5
+99 error code EACCES
+100 error errno 3
+101 error stack Error: EACCES, mkdir '/home/aps/.npm/socket.io/1.3.5'
+102 verbose exit [ 3, true ]
